@@ -67,15 +67,15 @@ This project demonstrates a fully local RAG implementation:
    npm run dev
    ```
 
-## 📂 Project Structure
-
-- `src/components`: UI Components (Weather display, History, etc.)
-- `src/services`:
-  - `aiService.js`: Handles interactions with Ollama and the ReAct agent loop.
-  - `vectorService.js`: Implements the retrieval logic (RAG).
-- `src/data`: Contains the static knowledge base and embeddings cache.
-- `scripts`: Node.js scripts for offline processing (e.g., generating embeddings).
-- `Modelfile`: Configuration for the custom AI persona.
+## Project Structure
+📂 src
+ ├─ components/      # UI components (Weather display, History, etc.)
+ ├─ services/        # Business logic and AI integrations
+ │   ├─ aiService.js     # Handles interactions with Ollama and the ReAct agent loop
+ │   └─ vectorService.js # Implements retrieval logic (RAG)
+ ├─ data/            # Static knowledge base and embeddings cache
+📂 scripts           # Node.js scripts for offline processing (e.g., generating embeddings)
+📂 Modelfile         # Configuration for the custom AI persona
 
 ## 🤝 Contributing
 
